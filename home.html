@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: #cfcaca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div {
+  color: #000000;
+  text-align: center;
+}
+
+p {
+  margin-left: 150px;
+  margin-top: 150px;
+  font-size: 96px;
+  color: #a87d7d;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+
+  &::before {
+    content: attr(data-item);
+    transition: all 1s ease-in-out;
+    color: #8254ff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+nav {
+  margin: 30px;
+  margin-top: -190px;
+  background: #000000;
+  padding: 16px;
+  .menuItems {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 50px;
+
+      a {
+        text-decoration: none;
+        color: #a04e4e;
+        font-size: 24px;
+        font-weight: 400;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        text-transform: uppercase;
+
+        &::before {
+          content: attr(data-item);
+          transition: 0.5s;
+          color: #8254ff;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 0;
+          overflow: hidden;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+</style>
+<body>
+
+<section>
+  <nav>
+    <ul class="menuItems">
+      <li><a href="login page.html" data-item="login">login</a></li>
+      <li><a href="signup page.html" data-item="Sign-up">Sign-up</a></li>
+      <li><a href="change.html" data-item="Change Password">Change Password</a></li>
+      <li><a href="forget password.html" data-item="Forget Password">Forget Password</a></li>
+    </ul>
+  </nav>
+<p data-item='It is a Login Page'>It is a Login Page</p>
+
+</section>
+
+</body>
+</html>

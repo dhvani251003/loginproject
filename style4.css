@@ -1,0 +1,66 @@
+body{
+    background-color: #cfcaca;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+}
+h2.enquiry-title{
+    margin-top: 25px;
+    padding: 5px;
+    line-height: 35px;
+    font-size: 20px;
+    color: #000000;
+    text-align: center  ;
+    margin-bottom: 10px;
+}
+.login-div{
+    border-radius: 8px;
+}
+.enquiry{
+    margin-top: 90px;
+    margin-left: 500px;
+    width: 290px;
+    padding: 10px;
+    background-color: #fefefe;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.login-input {
+    text-align: center;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    margin-left: 50px;
+    padding-left:10px;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-input:focus {
+    background-color: #46061b56;
+    border-color:#6e8095;
+    outline: none;
+}
+
+.login-button {
+    width: 65%;
+    height: 35px;
+    margin-left: 53px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    background: #322ea8;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer; 
+    outline:0;
+  }
+  .login-lost
+  {
+    text-align:center;
+    margin-bottom:0px;
+  }
